@@ -18,6 +18,9 @@
     hold-trigger-key-positions = <1 2 3 6 7 8 31 0 9>;
 };
 
+&key_repeat {
+};
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -88,10 +91,10 @@
 
         layer_0 {
             bindings = <
-&mt LEFT_ALT Q  &mt LEFT_SHIFT W  &mt LEFT_CONTROL E  &mt LEFT_GUI R  &kp T          &kp Y    &mt LEFT_GUI U  &mt LEFT_CONTROL I  &mt LEFT_SHIFT O  &mt LEFT_ALT P
-&kp A           &kp S             &kp D               &kp F           &kp G          &kp H    &kp J           &kp K               &kp L             &kp SEMI
-&lt 1 Z         &kp X             &kp C               &kp V           &kp B          &kp N    &kp M           &kp COMMA           &kp DOT           &kp SLASH
-                                                      &lt 2 BSPC      &mt ALL ESC    &kp RET  &lt 3 SPACE
+&mt LEFT_ALT Q  &mt LEFT_SHIFT W  &mt LEFT_CONTROL E  &mt LEFT_GUI R   &kp T          &kp Y    &mt LEFT_GUI U  &mt LEFT_CONTROL I  &mt LEFT_SHIFT O  &mt LEFT_ALT P
+&kp A           &kp S             &kp D               &kp F            &kp G          &kp H    &kp J           &kp K               &kp L             &kp SEMI
+&lt 1 Z         &kp X             &kp C               &kp V            &kp B          &kp N    &kp M           &kp COMMA           &kp DOT           &kp SLASH
+                                                      &lt 2 BACKSPACE  &mt ALL ESC    &kp RET  &lt 3 SPACE
             >;
         };
 
