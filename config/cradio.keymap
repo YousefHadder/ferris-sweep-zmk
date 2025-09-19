@@ -23,45 +23,28 @@
 
 / {
     behaviors {
-        // Mod-tap with hold-repeat behavior
-        // When tapped: send key, when held after tap: repeat key  
-        // When held without tap: send modifier
+        // Mod-tap with tap-preferred behavior and quick-tap settings that enable repeat
         mt_repeat: mt_repeat {
             compatible = "zmk,behavior-hold-tap";
-            label = "MOD_TAP_REPEAT";
             #binding-cells = <2>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
             tapping-term-ms = <200>;
-            quick-tap-ms = <175>;
+            quick-tap-ms = <200>;
             require-prior-idle-ms = <100>;
             hold-trigger-on-release;
             hold-trigger-key-positions = <1 2 3 6 7 8 31 0 9>;
-            bindings = <&kp>, <&kp_repeat>;
+            bindings = <&kp>, <&kp>;
         };
 
-        // Layer-tap with hold-repeat behavior  
-        // When tapped: send key, when held after tap: repeat key
-        // When held without tap: activate layer
+        // Layer-tap with tap-preferred behavior and quick-tap settings that enable repeat
         lt_repeat: lt_repeat {
             compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP_REPEAT";
             #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <100>;
-            bindings = <&mo>, <&kp_repeat>;
-        };
-
-        // Key press that repeats when held
-        kp_repeat: kp_repeat {
-            compatible = "zmk,behavior-hold-tap";
-            label = "KEY_PRESS_REPEAT";
-            #binding-cells = <1>;
             flavor = "tap-preferred";
-            tapping-term-ms = <40>;
-            quick-tap-ms = <0>;
-            bindings = <&key_repeat>, <&kp>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <100>;
+            bindings = <&mo>, <&kp>;
         };
     };
 
