@@ -41,13 +41,13 @@ The Ferris Sweep uses a 34-key layout arranged as follows:
 
 ```
 ┌─────┬─────┬─────┬─────┬─────┐   ┌─────┬─────┬─────┬─────┬─────┐
-│ Br- │ Br+ │Prev │Play │Next │   │Vol- │Mute │Vol+ │     │     │
+│ Br- │ Br+ │Prev │Play │Next │   │Vol- │Mute │Vol+ │     │  \  │
 ├─────┼─────┼─────┼─────┼─────┤   ├─────┼─────┼─────┼─────┼─────┤
-│     │     │     │ Spt │     │   │  ←  │  ↓  │  ↑  │  →  │     │
+│     │     │     │ Spt │     │   │  ←  │  ↓  │  ↑  │  →  │  '  │
 ├─────┼─────┼─────┼─────┼─────┤   ├─────┼─────┼─────┼─────┼─────┤
-│     │     │Copy │     │     │   │ D←  │ D↓  │ D↑  │ D→  │     │
+│ L1  │ Sft │Copy │     │     │   │ D←  │ D↓  │ D↑  │ D→  │  `  │
 └─────┴─────┴─────┼─────┼─────┤   ├─────┼─────┼─────┴─────┴─────┘
-                  │ Gui │ Spc │   │DRet │DSpc │
+                  │ L2  │ Spc │   │DRet │DSpc │
                   └─────┴─────┘   └─────┴─────┘
 ```
 
@@ -97,7 +97,7 @@ The keymap includes numerous combos for efficient symbol input:
 | F + G | [ | Left bracket |
 | H + J | ] | Right bracket |
 | V + B | { | Left brace |
-| N + M | } | Right brace |
+| M + N | } | Right brace |
 
 ## Legend
 
