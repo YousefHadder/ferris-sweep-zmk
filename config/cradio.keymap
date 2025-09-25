@@ -78,11 +78,6 @@
             key-positions = <18 19>;
         };
 
-        Tmux {
-            bindings = <&kp LC(B)>;
-            key-positions = <10 11>;
-        };
-
         Lparen {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <3 4>;
