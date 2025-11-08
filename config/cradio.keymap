@@ -150,9 +150,9 @@
 
         layer_4 {
             bindings = <
-&kp TAB  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans   &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&kp TAB  &trans  &trans  &trans  &trans    &trans  &trans    &trans     &trans           &trans
+&trans   &trans  &trans  &trans  &trans    &trans  &kp RCMD  &kp RCTRL  &kp RIGHT_SHIFT  &trans
+&trans   &trans  &trans  &trans  &trans    &trans  &trans    &trans     &trans           &trans
                          &trans  &trans    &trans  &trans
             >;
         };
