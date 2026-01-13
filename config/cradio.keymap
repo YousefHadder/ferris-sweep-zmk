@@ -58,26 +58,6 @@
             key-positions = <30 33>;
         };
 
-        Tab {
-            bindings = <&kp TAB>;
-            key-positions = <0 1>;
-        };
-
-        Backslash {
-            bindings = <&kp BSLH>;
-            key-positions = <8 9>;
-        };
-
-        Grave {
-            bindings = <&kp GRAVE>;
-            key-positions = <28 29>;
-        };
-
-        Quote {
-            bindings = <&kp SINGLE_QUOTE>;
-            key-positions = <18 19>;
-        };
-
         Lparen {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <3 4>;
